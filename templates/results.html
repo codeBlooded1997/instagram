@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}
+    <title>RESULTS</title>
+{% endblock %}
+
+{% block body %}
+    <h4>Free Proxy List Scraper</h4>
+    <hr class="my-4">
+    <table id="proxy-table" class="display table responsive text-left mt-4" style="width: 100%">
+        <thead>
+            <tr>
+                <th>Posts</th>
+                <th>Followers</th>
+                <th>Following</th>
+            </tr>
+        </thead>
+        <tbody>
+                <tr>
+                    <td>{{ result[2].split('-')[0] }}</td>
+                    <td>{{ result[0] }}</td>
+                    <td>{{ result[1] }}</td>
+                </tr>
+        </tbody>
+    </table>
+{% endblock %}
